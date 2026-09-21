@@ -69,7 +69,7 @@ function updatePoint() {
         point.velocityY += point.gravity;
         point.y += point.velocityY;
 
-        const ground = height - point.radius;
+        const ground = height - point.radius - 30;
 
         if (point.y >= ground) {
 
